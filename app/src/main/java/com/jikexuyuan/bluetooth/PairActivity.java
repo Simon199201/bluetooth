@@ -17,11 +17,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -31,32 +31,30 @@ import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
-    private static final String TAG = "MainActivity";
+public class PairActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+    private static final String TAG = "PairActivity";
     private BluetoothAdapter mBluetoothAdapter;
-    private ListView lvDevices;//用来展示扫描结果的ListView
-    private TextView mTextView;//用来展示扫描结果的TextView
-    private Button mSendButton;
-    private EditText mEditText;
-    private Button mSearchButton;//扫描
+    private ListView lvDevices;
+    private TextView mTextView;
+    private Button mButton;
 
-    private List<String> blueToothDevices = new ArrayList<>();//存放蓝牙设备的List
+    private List<String> blueToothDevices = new ArrayList<>();
 
     private ArrayAdapter<String> mAdapter;
 
-    private final UUID MY_UUID = UUID.fromString("db764ac8-4b08-7f25-aafe-59d03c27bae3");//uuid 相当于端口号
-    private final String NAME = "bluetooth_socket";//serverSocket name
+    private final UUID MY_UUID = UUID.fromString("db764ac8-4b08-7f25-aafe-59d03c27bae3");
+    private final String NAME = "bluetooth_socket";
 
-    private BluetoothSocket mBluetoothSocket;//蓝牙客户端
-    private BluetoothDevice mBluetoothDevice;//蓝牙设备
+    private BluetoothSocket mBluetootoSocket;
+    private BluetoothDevice mBluetoothDevice;
 
-    private OutputStream mOutputStream;//客户端
+    private OutputStream mOutputStream;
     private ProgressBar progress;
 
     private Handler mHandler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message msg) {
-            Toast.makeText(MainActivity.this, String.valueOf(msg.obj), Toast.LENGTH_SHORT).show();
+            Toast.makeText(PairActivity.this, String.valueOf(msg.obj), Toast.LENGTH_SHORT).show();
             return false;
         }
     });
@@ -77,14 +75,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(intent.getAction())) {
                 setTitle(getString(R.string.search_finished));
                 progress.setVisibility(View.GONE);
-                mSearchButton.setText(getString(R.string.search_blue_device));
+                mButton.setEnabled(true);
+                mButton.setText(getString(R.string.search_blue_device));
             } else if (BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(intent.getAction())) {
                 setTitle(getString(R.string.start_search));
                 progress.setVisibility(View.VISIBLE);
             }
         }
     };
-    private String address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,16 +113,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     private void initOnClick() {
-        mSearchButton.setOnClickListener(new View.OnClickListener() {
+        mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Onclick_search();
-            }
-        });
-        mSendButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Onclick_send();
             }
         });
     }
@@ -133,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (null == mBluetoothAdapter) {
             Toast.makeText(this.getApplicationContext(), R.string.not_suppotr_bluetooth, Toast.LENGTH_SHORT).show();
-            mSearchButton.setEnabled(false);
+            mButton.setEnabled(false);
             return;
         }
         Set<BluetoothDevice> bluetoothDevices = mBluetoothAdapter.getBondedDevices();
@@ -152,30 +144,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private void initView() {
         mTextView = (TextView) findViewById(R.id.textView_devices);
-        mSearchButton = (Button) findViewById(R.id.btn_search_blueDevice);
+        mButton = (Button) findViewById(R.id.btn_search_blueDevice);
         lvDevices = (ListView) findViewById(R.id.listView);
         progress = (ProgressBar) findViewById(R.id.progress);
-        mSendButton = (Button) findViewById(R.id.send);
-        mEditText = (EditText) findViewById(R.id.editText_send);
     }
 
     private void Onclick_search() {
-        mSearchButton.setText(getString(R.string.search_blue_device_cancel));
+//        mButton.setEnabled(false);
+        mButton.setText(getString(R.string.search_blue_device_cancel));
         if (mBluetoothAdapter.isDiscovering()) {
             mBluetoothAdapter.cancelDiscovery();
         }
         mBluetoothAdapter.startDiscovery();
-    }
-
-    private void Onclick_send() {
-        if (address == null) {
-            Toast.makeText(this, getString(R.string.please_select_bluetooth_address), Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (mEditText.getText().toString().equals("")) {
-            Toast.makeText(this, R.string.not_null, Toast.LENGTH_LONG).show();
-        }
-        sendMessage(address, mEditText.getText().toString());
     }
 
     @Override
@@ -184,44 +164,32 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         if (null == s) {
             return;
         }
-        address = s.substring(s.indexOf(":") + 1).trim();
+        String address = s.substring(s.indexOf(":") + 1).trim();
 
-        sendMessage(address, (mBluetoothAdapter.getName() + ":" + getString(R.string.send_message_to_other_device)));
-    }
-
-    /**
-     * 发送信息到另一个蓝牙设备
-     *
-     * @param address 蓝牙设备地址
-     * @param message 信息
-     */
-    private void sendMessage(String address, String message) {
         try {
             if (mBluetoothAdapter.isDiscovering()) {
                 mBluetoothAdapter.cancelDiscovery();
             }
-
             if (null == mBluetoothDevice) {
                 mBluetoothDevice = mBluetoothAdapter.getRemoteDevice(address);
             }
-
-            if (mBluetoothSocket == null) {
-                mBluetoothSocket = mBluetoothDevice.createRfcommSocketToServiceRecord(MY_UUID);
-                mBluetoothSocket.connect();
-                mOutputStream = mBluetoothSocket.getOutputStream();
+            if (mBluetoothDevice.getBondState() != BluetoothDevice.BOND_BONDED) {
+                boolean isBounded = ClsUtils.createBond(mBluetoothDevice.getClass(), mBluetoothDevice);
+                if (isBounded) {
+                    Log.e(TAG, "onItemClick: " + true);
+                } else {
+                    Log.e(TAG, "onItemClick: " + false);
+                    return;
+                }
             }
+            if (mBluetootoSocket == null) {
+                mBluetootoSocket = mBluetoothDevice.createRfcommSocketToServiceRecord(MY_UUID);
+                mBluetootoSocket.connect();
+                mOutputStream = mBluetootoSocket.getOutputStream();
 
-            if (!mBluetoothSocket.isConnected()) {
-                resetSocket();
             }
             if (mOutputStream != null) {
-                try {
-                    mOutputStream.write((message.getBytes("utf-8")));
-                    Log.e(TAG, "onItemClick: " + mBluetoothAdapter.getName() + ":" + message);
-                } catch (Exception e) {
-                    resetSocket();
-                    sendMessage(address, message);
-                }
+                mOutputStream.write("发送信息到其他蓝牙设备".getBytes("utf-8"));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -230,7 +198,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private class AcceptThread extends Thread {
         private BluetoothServerSocket mBluetoothServerSocket;
-        private BluetoothSocket bluetoothSocket;
+        private BluetoothSocket mBluetoothSocket;
         private InputStream is;
         private OutputStream os;
         private boolean isContinue;
@@ -245,46 +213,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         @Override
         public void run() {
-            while (true) {
-                try {
-                    bluetoothSocket = mBluetoothServerSocket.accept();
-                    Log.e(TAG, "run: accept");
-                    is = bluetoothSocket.getInputStream();
-                    os = bluetoothSocket.getOutputStream();
-                    isContinue = true;
-                    while (isContinue) {
-                        byte[] buffer = new byte[128];
-                        int count = is.read(buffer);
-                        Message message = new Message();
-                        message.obj = new String(buffer, 0, count, "utf-8");
-                        mHandler.sendMessage(message);
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    isContinue = false;
-                } finally {
-                    try {
-                        if (bluetoothSocket != null) {
-                            bluetoothSocket.close();
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+            try {
+                mBluetoothSocket = mBluetoothServerSocket.accept();
+                is = mBluetoothSocket.getInputStream();
+                os = mBluetoothSocket.getOutputStream();
+                isContinue = true;
+                while (isContinue) {
+                    byte[] buffer = new byte[128];
+                    int count = is.read(buffer);
+                    Message message = new Message();
+                    message.obj = new String(buffer, 0, count, "utf-8");
+                    mHandler.sendMessage(message);
                 }
-
+            } catch (IOException e) {
+                e.printStackTrace();
+                isContinue = false;
             }
         }
-    }
-
-    private void resetSocket() {
-        try {
-            mBluetoothSocket.close();
-            mBluetoothSocket = mBluetoothDevice.createRfcommSocketToServiceRecord(MY_UUID);
-            mBluetoothSocket.connect();
-            mOutputStream = mBluetoothSocket.getOutputStream();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
     }
 }

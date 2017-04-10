@@ -1,9 +1,20 @@
 <resources>
-    <string name="app_name">SearchBlueToothDevice</string>
+    <string name="app_name">蓝牙Demo</string>
+    <string name="main_activity">首页</string>
+    <string name="index_activity">索引</string>
+    <string name="pair_activity">配对</string>
+
     <string name="search_blue_device">搜索蓝牙设备</string>
     <string name="search_blue_device_cancel">取消搜索蓝牙设备</string>
     <string name="all_bluetooth_device">所有的蓝牙设备名称和地址\n</string>
     <string name="not_suppotr_bluetooth">您的设备不支持蓝牙技术哦～</string>
     <string name="search_finished">已完成搜索</string>
     <string name="start_search">开始搜索</string>
+    <string name="search_and_create_socket">搜索蓝牙并建立通信</string>
+    <string name="pair_bluetooth">蓝牙配对</string>
+    <string name="send">发送</string>
+    <string name="please_input">请输入要传递的信息</string>
+    <string name="please_select_bluetooth_address">请选择一个蓝牙地址</string>
+    <string name="not_null">信息不能为空哦</string>
+    <string name="send_message_to_other_device">发送信息到其他蓝牙设备</string>
 </resources>
