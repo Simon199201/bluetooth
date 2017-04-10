@@ -1,4 +1,4 @@
-package com.jikexuyuan.ndk.searchbluetoothdevice;
+package com.jikexuyuan.bluetooth;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -20,6 +20,8 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.jikexuyuan.ndk.searchbluetoothdevice.R;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -70,12 +72,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     }
                 }
             } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(intent.getAction())) {
-                setTitle("已完成搜索");
+                setTitle(getString(R.string.search_finished));
                 progress.setVisibility(View.GONE);
                 mButton.setEnabled(true);
                 mButton.setText(getString(R.string.search_blue_device));
             } else if (BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(intent.getAction())) {
-                setTitle("开始搜索");
+                setTitle(getString(R.string.start_search));
                 progress.setVisibility(View.VISIBLE);
             }
         }
@@ -191,7 +193,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         private OutputStream os;
         private boolean isContinue;
 
-        public AcceptThread() {
+        AcceptThread() {
             try {
                 mBluetoothServerSocket = mBluetoothAdapter.listenUsingRfcommWithServiceRecord(NAME, MY_UUID);
             } catch (IOException e) {

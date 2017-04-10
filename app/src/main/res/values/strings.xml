@@ -4,4 +4,6 @@
     <string name="search_blue_device_cancel">取消搜索蓝牙设备</string>
     <string name="all_bluetooth_device">所有的蓝牙设备名称和地址\n</string>
     <string name="not_suppotr_bluetooth">您的设备不支持蓝牙技术哦～</string>
+    <string name="search_finished">已完成搜索</string>
+    <string name="start_search">开始搜索</string>
 </resources>
