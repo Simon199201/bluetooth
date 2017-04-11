@@ -26,6 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".StatusSettingActivity"
+            android:label="@string/pair_bluetooth_setting" />
     </application>
 
 </manifest>

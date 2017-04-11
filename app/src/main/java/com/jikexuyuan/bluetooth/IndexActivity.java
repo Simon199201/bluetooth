@@ -17,6 +17,8 @@ public class IndexActivity extends AppCompatActivity {
     Button searchAndCreateSocket;
     @BindView(R.id.pair)
     Button pair;
+    @BindView(R.id.status)
+    Button status;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,7 +27,7 @@ public class IndexActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.search_and_create_socket, R.id.pair})
+    @OnClick({R.id.search_and_create_socket, R.id.pair, R.id.status})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.search_and_create_socket:
@@ -33,6 +35,9 @@ public class IndexActivity extends AppCompatActivity {
                 break;
             case R.id.pair:
                 startActivity(new Intent(this, PairActivity.class));
+                break;
+            case R.id.status:
+                startActivity(new Intent(this, StatusSettingActivity.class));
                 break;
         }
     }

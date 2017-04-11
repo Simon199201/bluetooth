@@ -12,9 +12,12 @@
     <string name="start_search">开始搜索</string>
     <string name="search_and_create_socket">搜索蓝牙并建立通信</string>
     <string name="pair_bluetooth">蓝牙配对</string>
+    <string name="pair_bluetooth_setting">设置蓝牙状态</string>
     <string name="send">发送</string>
     <string name="please_input">请输入要传递的信息</string>
     <string name="please_select_bluetooth_address">请选择一个蓝牙地址</string>
     <string name="not_null">信息不能为空哦</string>
     <string name="send_message_to_other_device">发送信息到其他蓝牙设备</string>
+    <string name="bluetooth_setting">蓝牙开关</string>
+    <string name="watch_bluetoothstatus">查看蓝牙状态</string>
 </resources>
