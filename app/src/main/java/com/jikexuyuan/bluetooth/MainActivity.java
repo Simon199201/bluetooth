@@ -103,6 +103,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             acceptThread.interrupt();
         }
         acceptThread = null;
+        if (receiver != null) {
+            unregisterReceiver(receiver);
+        }
     }
 
     private void initReceiver() {
@@ -135,6 +138,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             Toast.makeText(this.getApplicationContext(), R.string.not_suppotr_bluetooth, Toast.LENGTH_SHORT).show();
             mSearchButton.setEnabled(false);
             return;
+        }
+        if (!mBluetoothAdapter.isEnabled()) {
+            mBluetoothAdapter.enable();
         }
         Set<BluetoothDevice> bluetoothDevices = mBluetoothAdapter.getBondedDevices();
         if (bluetoothDevices.size() > 0) {
@@ -200,20 +206,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             if (mBluetoothAdapter.isDiscovering()) {
                 mBluetoothAdapter.cancelDiscovery();
             }
-
+            Log.e(TAG, "sendMessage: 1");
             if (null == mBluetoothDevice) {
                 mBluetoothDevice = mBluetoothAdapter.getRemoteDevice(address);
             }
+            Log.e(TAG, "sendMessage: 2");
 
             if (mBluetoothSocket == null) {
                 mBluetoothSocket = mBluetoothDevice.createRfcommSocketToServiceRecord(MY_UUID);
                 mBluetoothSocket.connect();
                 mOutputStream = mBluetoothSocket.getOutputStream();
             }
+            Log.e(TAG, "sendMessage: 3");
 
             if (!mBluetoothSocket.isConnected()) {
                 resetSocket();
             }
+            Log.e(TAG, "sendMessage: 4");
+
             if (mOutputStream != null) {
                 try {
                     mOutputStream.write((message.getBytes("utf-8")));
@@ -247,6 +257,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         public void run() {
             while (true) {
                 try {
+                    if (mBluetoothServerSocket == null) {
+                        return;
+                    }
                     bluetoothSocket = mBluetoothServerSocket.accept();
                     Log.e(TAG, "run: accept");
                     is = bluetoothSocket.getInputStream();

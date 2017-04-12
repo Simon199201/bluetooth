@@ -101,6 +101,9 @@ public class PairActivity extends AppCompatActivity implements AdapterView.OnIte
             acceptThread.interrupt();
         }
         acceptThread = null;
+        if (receiver != null) {
+            unregisterReceiver(receiver);
+        }
     }
 
     private void initReceiver() {
@@ -127,6 +130,9 @@ public class PairActivity extends AppCompatActivity implements AdapterView.OnIte
             Toast.makeText(this.getApplicationContext(), R.string.not_suppotr_bluetooth, Toast.LENGTH_SHORT).show();
             mButton.setEnabled(false);
             return;
+        }
+        if (!mBluetoothAdapter.isEnabled()) {
+            mBluetoothAdapter.enable();
         }
         Set<BluetoothDevice> bluetoothDevices = mBluetoothAdapter.getBondedDevices();
         if (bluetoothDevices.size() > 0) {
@@ -214,6 +220,9 @@ public class PairActivity extends AppCompatActivity implements AdapterView.OnIte
         @Override
         public void run() {
             try {
+                if (mBluetoothServerSocket == null) {
+                    return;
+                }
                 mBluetoothSocket = mBluetoothServerSocket.accept();
                 is = mBluetoothSocket.getInputStream();
                 os = mBluetoothSocket.getOutputStream();
