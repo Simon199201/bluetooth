@@ -13,7 +13,7 @@
     <string name="search_and_create_socket">搜索蓝牙并建立通信</string>
     <string name="pair_bluetooth">蓝牙配对</string>
     <string name="pair_bluetooth_setting">设置蓝牙状态</string>
-    <string name="transfer_file">传输文件</string>
+    <string name="transfer_file">传输文件(Intent)</string>
     <string name="send">发送</string>
     <string name="please_input">请输入要传递的信息</string>
     <string name="please_select_bluetooth_address">请选择一个蓝牙地址</string>
@@ -22,4 +22,7 @@
     <string name="bluetooth_setting">蓝牙开关</string>
     <string name="watch_bluetoothstatus">查看蓝牙状态</string>
     <string name="file_transfer">文件传输</string>
+    <string name="transfer_file_by_socket">传输文件(Socket)</string>
+    <string name="choose_file">选择文件</string>
+    <string name="not_exist">文件不存在</string>
 </resources>

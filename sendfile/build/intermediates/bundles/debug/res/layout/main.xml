@@ -88,13 +88,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/pair" />
+            android:text="@string/pair"
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/sendFile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/sendFile" />
+            android:text="@string/sendFile"
+            android:visibility="gone"/>
     </LinearLayout>
 </RelativeLayout>

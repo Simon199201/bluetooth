@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:name="com.isoftstone.bluetooth.BluetoothApplication"
         android:allowBackup="true"
@@ -39,7 +39,9 @@
             android:label="@string/file_transfer"
             android:screenOrientation="portrait" />
 
-
+        <activity
+            android:name=".SendFileBySocketActivity"
+            android:label="@string/transfer_file_by_socket" />
     </application>
 
 </manifest>

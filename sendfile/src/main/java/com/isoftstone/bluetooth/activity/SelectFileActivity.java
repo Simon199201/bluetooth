@@ -1,7 +1,5 @@
 package com.isoftstone.bluetooth.activity;
 
-import java.io.File;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
@@ -22,6 +20,9 @@ import com.isoftstone.bluetooth.BluetoothApplication;
 import com.isoftstone.bluetooth.R;
 import com.isoftstone.bluetooth.adapter.AdapterManager;
 import com.isoftstone.bluetooth.adapter.FileListAdapter;
+import com.isoftstone.bluetooth.entity.TouchObject;
+
+import java.io.File;
 
 public class SelectFileActivity extends Activity {
 	ListView mFileListView;
@@ -43,6 +44,8 @@ public class SelectFileActivity extends Activity {
 	TextView mLastClickView;   //最后一次点击的文件 --文件名
 	TextView mNowClickView;   //现在点击的文件 -- 文件名
 	private boolean isSelected = false;   //是否选择了文件   (非文件夹)
+	private BluetoothApplication mApplication;
+	private TouchObject mTouchObject;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +60,14 @@ public class SelectFileActivity extends Activity {
 		//取得sd卡目录
 		sdcardPath = Environment.getExternalStorageDirectory().getAbsolutePath();
 		path = sdcardPath;
-		
+
+
+		mApplication = BluetoothApplication.getInstance();
+		mTouchObject = mApplication.getTouchObject();
+		//实例化Adapter管理器并设置到Application
+		mAdapterManager = new AdapterManager(this);
+		mApplication.setAdapterManager(mAdapterManager);
+
 		mAdapterManager = BluetoothApplication.getInstance().getAdapterManager();
 		mFileListView.setAdapter(mAdapterManager.getFileListAdapter());
 		//首先显示sd卡下所有文件及文件夹
