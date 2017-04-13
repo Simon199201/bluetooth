@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.isoftstone.bluetooth.test" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.isoftstone.bluetooth.test"
+        android:targetPackage="com.isoftstone.bluetooth.test" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.isoftstone.bluetooth.activity.BluetoothDemoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.isoftstone.bluetooth.activity.SelectFileActivity"
+            android:theme="@android:style/Theme.Dialog" />
+    </application>
+
+</manifest>

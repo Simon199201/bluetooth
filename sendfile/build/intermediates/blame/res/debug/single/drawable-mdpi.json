@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/drawable-mdpi/icon_file.png",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/drawable-mdpi/icon_file.png"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/drawable-mdpi/bluetooth.png",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/drawable-mdpi/bluetooth.png"
+    },
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_folder.png",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/drawable-mdpi/icon_folder.png"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/drawable-mdpi/icon_folder.png",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/drawable-mdpi/icon_folder.png"
+    },
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_file.png",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/drawable-mdpi/icon_file.png"
+    },
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/drawable-mdpi/bluetooth.png",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/drawable-mdpi/bluetooth.png"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]

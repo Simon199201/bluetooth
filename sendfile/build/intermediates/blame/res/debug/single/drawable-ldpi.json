@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/drawable-ldpi/ic_launcher.png",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/drawable-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_launcher.png",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/drawable-ldpi/ic_launcher.png"
+    }
+]

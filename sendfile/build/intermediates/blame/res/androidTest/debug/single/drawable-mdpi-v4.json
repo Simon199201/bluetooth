@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/bluetooth.png",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/drawable-mdpi-v4/bluetooth.png"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/icon_file.png",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/drawable-mdpi-v4/icon_file.png"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/icon_folder.png",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/drawable-mdpi-v4/icon_folder.png"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/drawable-mdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/listbg.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/drawable-mdpi-v4/listbg.xml"
+    }
+]

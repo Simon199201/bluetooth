@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/layout/device_list_item.xml",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/layout/device_list_item.xml"
+    },
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/layout/select_time_dialog.xml",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/layout/select_time_dialog.xml"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/layout/device_list_item.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/layout/device_list_item.xml"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/layout/select_time_dialog.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/layout/select_time_dialog.xml"
+    },
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/layout/file_list_item.xml",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/layout/file_list_item.xml"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/layout/select_file.xml",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/layout/select_file.xml"
+    },
+    {
+        "merged": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/layout/select_file.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/layout/select_file.xml"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/debug/layout/file_list_item.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/layout/file_list_item.xml"
+    }
+]

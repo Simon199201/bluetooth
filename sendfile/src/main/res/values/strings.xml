@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, BluetoothDemoActivity!</string>
+    <string name="app_name">BluetoothDemo</string>
+    <string name="device_list">设备列表</string>
+    <string name="search_device">搜索设备</string>
+    <string name="send_file">发送文件</string>
+    <string name="device_name">设备名</string>
+    <string name="is_pair">是否配对</string>
+    <string name="mac_address">MAC地址：</string>
+    <string name="address_str">address</string>
+    <string name="select_file">选择文件</string>
+    <string name="send_file1">发送文件：</string>
+    <string name="null_name">null</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="set_visible">设置可见</string>
+    <string name="set_visible_time">设置可见时间:</string>
+    <string name="second">秒</string>
+    <string name="pair">配对</string>
+    <string name="sendFile">发送文件</string>
+
+</resources>

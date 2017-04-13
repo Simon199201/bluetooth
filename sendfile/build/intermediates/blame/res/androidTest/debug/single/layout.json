@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/layout/file_list_item.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/layout/file_list_item.xml"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/layout/main.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/layout/select_file.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/layout/select_file.xml"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/layout/device_list_item.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/layout/device_list_item.xml"
+    },
+    {
+        "merged": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/res/merged/androidTest/debug/layout/select_time_dialog.xml",
+        "source": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/bundles/debug/res/layout/select_time_dialog.xml"
+    }
+]

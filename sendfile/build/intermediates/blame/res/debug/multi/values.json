@@ -1,0 +1,680 @@
+[
+    {
+        "outputFile": "/Users/simon/Downloads/BluetoothDemo1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 8,
+                    "endColumn": 19,
+                    "endOffset": 233
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/array.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 238,
+                    "endColumn": 47,
+                    "endOffset": 281
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 286,
+                    "endColumn": 50,
+                    "endOffset": 332
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 337,
+                    "endColumn": 35,
+                    "endOffset": 368
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 373,
+                    "endColumn": 37,
+                    "endOffset": 406
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 411,
+                    "endColumn": 44,
+                    "endOffset": 451
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 456,
+                    "endColumn": 43,
+                    "endOffset": 495
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 500,
+                    "endColumn": 37,
+                    "endOffset": 533
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 538,
+                    "endColumn": 69,
+                    "endOffset": 603
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 608,
+                    "endColumn": 40,
+                    "endOffset": 644
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 649,
+                    "endColumn": 46,
+                    "endOffset": 691
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 696,
+                    "endColumn": 42,
+                    "endOffset": 734
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 739,
+                    "endColumn": 35,
+                    "endOffset": 770
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 872,
+                        "endColumn": 35,
+                        "endOffset": 903
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 775,
+                    "endColumn": 46,
+                    "endOffset": 817
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 822,
+                    "endColumn": 36,
+                    "endOffset": 854
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 859,
+                    "endColumn": 44,
+                    "endOffset": 899
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 904,
+                    "endColumn": 41,
+                    "endOffset": 941
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 908,
+                        "endColumn": 41,
+                        "endOffset": 945
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 946,
+                    "endColumn": 42,
+                    "endOffset": 984
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 989,
+                    "endColumn": 44,
+                    "endOffset": 1029
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1034,
+                    "endColumn": 44,
+                    "endOffset": 1074
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1079,
+                    "endColumn": 52,
+                    "endOffset": 1127
+                },
+                "from": {
+                    "file": "/Users/simon/Downloads/BluetoothDemo1/app/src/main/res/values/strings.xml"
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/simon/Workpace/Github/Bluetooth/sendfile/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 8,
+                    "endColumn": 19,
+                    "endOffset": 233
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/array.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 63,
+                        "endLine": 9,
+                        "endColumn": 19,
+                        "endOffset": 252
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 238,
+                    "endColumn": 47,
+                    "endOffset": 281
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 444,
+                        "endColumn": 47,
+                        "endOffset": 487
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 286,
+                    "endColumn": 50,
+                    "endOffset": 332
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 126,
+                        "endColumn": 50,
+                        "endOffset": 172
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 337,
+                    "endColumn": 35,
+                    "endOffset": 368
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 701,
+                        "endColumn": 35,
+                        "endOffset": 732
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 373,
+                    "endColumn": 37,
+                    "endOffset": 406
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 663,
+                        "endColumn": 37,
+                        "endOffset": 696
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 411,
+                    "endColumn": 44,
+                    "endOffset": 451
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 177,
+                        "endColumn": 44,
+                        "endOffset": 217
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 456,
+                    "endColumn": 43,
+                    "endOffset": 495
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 312,
+                        "endColumn": 43,
+                        "endOffset": 351
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 500,
+                    "endColumn": 37,
+                    "endOffset": 533
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 625,
+                        "endColumn": 37,
+                        "endOffset": 658
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 538,
+                    "endColumn": 69,
+                    "endOffset": 603
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 69,
+                        "endOffset": 121
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 608,
+                    "endColumn": 40,
+                    "endOffset": 644
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 356,
+                        "endColumn": 40,
+                        "endOffset": 392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 649,
+                    "endColumn": 46,
+                    "endOffset": 691
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 397,
+                        "endColumn": 46,
+                        "endOffset": 439
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 696,
+                    "endColumn": 42,
+                    "endOffset": 734
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 582,
+                        "endColumn": 42,
+                        "endOffset": 620
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 739,
+                    "endColumn": 35,
+                    "endOffset": 770
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 872,
+                        "endColumn": 35,
+                        "endOffset": 903
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 775,
+                    "endColumn": 46,
+                    "endOffset": 817
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 222,
+                        "endColumn": 46,
+                        "endOffset": 264
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 822,
+                    "endColumn": 36,
+                    "endOffset": 854
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 835,
+                        "endColumn": 36,
+                        "endOffset": 867
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 859,
+                    "endColumn": 44,
+                    "endOffset": 899
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 492,
+                        "endColumn": 44,
+                        "endOffset": 532
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 904,
+                    "endColumn": 41,
+                    "endOffset": 941
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 908,
+                        "endColumn": 41,
+                        "endOffset": 945
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 946,
+                    "endColumn": 42,
+                    "endOffset": 984
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 269,
+                        "endColumn": 42,
+                        "endOffset": 307
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 989,
+                    "endColumn": 44,
+                    "endOffset": 1029
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 537,
+                        "endColumn": 44,
+                        "endOffset": 577
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1034,
+                    "endColumn": 44,
+                    "endOffset": 1074
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 737,
+                        "endColumn": 44,
+                        "endOffset": 777
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1079,
+                    "endColumn": 52,
+                    "endOffset": 1127
+                },
+                "from": {
+                    "file": "/Users/simon/Workpace/Github/Bluetooth/sendfile/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 782,
+                        "endColumn": 52,
+                        "endOffset": 830
+                    }
+                }
+            }
+        ]
+    }
+]
