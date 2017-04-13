@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Bluetooth.iml" filepath="$PROJECT_DIR$/Bluetooth.iml" />
       <module fileurl="file://$PROJECT_DIR$/SearchBlueToothDevice.iml" filepath="$PROJECT_DIR$/SearchBlueToothDevice.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sendfile/sendfile.iml" filepath="$PROJECT_DIR$/sendfile/sendfile.iml" />
     </modules>
   </component>
 </project>

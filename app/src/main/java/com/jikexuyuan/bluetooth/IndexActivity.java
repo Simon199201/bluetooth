@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.isoftstone.bluetooth.activity.BluetoothDemoActivity;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -19,6 +21,8 @@ public class IndexActivity extends AppCompatActivity {
     Button pair;
     @BindView(R.id.status)
     Button status;
+    @BindView(R.id.transfer)
+    Button transfer;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,7 +31,7 @@ public class IndexActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.search_and_create_socket, R.id.pair, R.id.status})
+    @OnClick({R.id.search_and_create_socket, R.id.pair, R.id.status, R.id.transfer})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.search_and_create_socket:
@@ -38,6 +42,9 @@ public class IndexActivity extends AppCompatActivity {
                 break;
             case R.id.status:
                 startActivity(new Intent(this, StatusSettingActivity.class));
+                break;
+            case R.id.transfer:
+                startActivity(new Intent(this, BluetoothDemoActivity.class));
                 break;
         }
     }

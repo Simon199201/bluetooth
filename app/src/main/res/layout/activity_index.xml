@@ -17,6 +17,12 @@
         android:text="@string/pair_bluetooth" />
 
     <Button
+        android:id="@+id/transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/transfer_file" />
+
+    <Button
         android:id="@+id/status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
