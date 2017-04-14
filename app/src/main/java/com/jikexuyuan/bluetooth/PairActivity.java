@@ -240,4 +240,13 @@ public class PairActivity extends AppCompatActivity implements AdapterView.OnIte
             }
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        if (mBluetoothAdapter != null && mBluetoothAdapter.isDiscovering()) {
+            mBluetoothAdapter.cancelDiscovery();
+        } else {
+            super.onBackPressed();
+        }
+    }
 }

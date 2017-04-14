@@ -34,14 +34,12 @@
             android:name=".StatusSettingActivity"
             android:label="@string/pair_bluetooth_setting"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".TransferActivity"
-            android:label="@string/file_transfer"
-            android:screenOrientation="portrait" />
 
         <activity
             android:name=".SendFileBySocketActivity"
-            android:label="@string/transfer_file_by_socket" />
+            android:label="@string/transfer_file_by_socket"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
